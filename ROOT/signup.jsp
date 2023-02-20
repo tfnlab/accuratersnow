@@ -166,13 +166,7 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Customer Portal</h3>
-            </div>
             <div class="portfolio-description">
-              <h2>
-                Join Accu Raters today and unlock exclusive benefits for your energy efficiency needs!
-              </h2>
               <p>
                 At Accu Raters, we believe in providing our customers with the best possible experience, which is why we have created a customer portal that gives you easy access to all the information you need. Our customer portal is designed to be user-friendly and intuitive, providing you with a range of features that will help you to manage your account and stay up-to-date with your orders.
               </p>
