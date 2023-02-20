@@ -1,226 +1,320 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <title>Nomad Force HTML Template - News Page</title>
+  <title>Portfolio Details - Gp Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        <!-- CSS FILES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- =======================================================
+  * Template Name: Gp - v4.9.1
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>
+  function submitForm(event) {
+    event.preventDefault();
+    var form = document.getElementById("myForm");
 
-        <link href="css/aos.css" rel="stylesheet">
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
 
-        <link href="css/templatemo-nomad-force.css" rel="stylesheet">
-<!--
-
-TemplateMo 567 Nomad Force
-
-https://templatemo.com/tm-567-nomad-force
-
--->
-<script>
-function submitForm(event) {
-  event.preventDefault();
-  var form = document.getElementById("myForm");
-
-  // Create a new XMLHttpRequest object
-  var xhr = new XMLHttpRequest();
-
-  // Set the callback function
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4) {
-      // The request is complete
-      if (xhr.status == 200) {
-        // The request was successful
-        var response = xhr.responseText;
-        document.getElementById("hrnapi").innerHTML = response;
-        // Do something with the response
-      } else {
-        // The request was unsuccessful
+    // Set the callback function
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4) {
+        // The request is complete
+        if (xhr.status == 200) {
+          // The request was successful
+          var response = xhr.responseText;
+          document.getElementById("hrnapi").innerHTML = response;
+          // Do something with the response
+        } else {
+          // The request was unsuccessful
+        }
       }
-    }
-  };
-  // Set the request method and URL
-  xhr.open(form.method, form.action);
-  xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  var formData = new FormData(form);
-  var params = new URLSearchParams(formData);
-  xhr.send(params);
+    };
+    // Set the request method and URL
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    var formData = new FormData(form);
+    var params = new URLSearchParams(formData);
+    xhr.send(params);
 
-}
-</script>
-    </head>
+  }
+  </script>
+</head>
 
-    <body>
+<body>
 
-        <main>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
 
-            <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                      <strong>All Region Inc</strong>
-                    </a>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto active" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html#hero">Home</a>
-                            </li>
-                            <li class="nav-item" ><a class="nav-link" href="https://opensea.io/collection/all-region">Ethereum</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="https://opensea.io/collection/all-region-v2">Matic</a></li>
-                            <li class="nav-item" ><a class="nav-link" href="https://polygonscan.com/token/0x5a1d742fee322f8815b1616c8bb8f2de0f584106">All Region Coin</a></li>
-                            <li class="nav-item"><a class="nav-link" class="nav-link" href="signin.jsp">Sign-In</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+      <a href="#about" class="get-started-btn scrollto">Get Started</a>
 
-            <section class="news-detail section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-10 mx-auto" id="hrnapi" name="hrnapi">
-                            <h2 class="mb-3" >All Region Inc Portal Sign-Up</h2>
-                            <form action="hrn.jsp" method="POST" name="myForm" id="myForm" >
-                              <input type="hidden" id="apiAction" name="apiAction" value="signup" />
-                                <div class="form-group mt-3">
-                              <div class="row">
-                                <div class="col">
-                          		<label for="firstName">First Name:</label><br>
-                          		<input type="text"  class="form-control mt-1" id="firstName" name="firstName"  required  tabindex="1"><br>
-                                </div>
-                                <div class="col">
-                          		<label for="middleInitial">Middle Initial:</label><br>
-                          		<input type="text"  class="form-control mt-1" id="middleInitial" name="middleInitial"  tabindex="2"><br>
-                                </div>
-                                <div class="col">
-                          		<label for="lastName">Last Name:</label><br>
-                          		<input type="text"  class="form-control mt-1" id="lastName" name="lastName" required  tabindex="3"><br>
-                                </div>
-                              </div>
-                                </div>
+    </div>
+  </header><!-- End Header -->
 
-                              <div class="form-group mt-3">
-                          		<label for="email">Email:</label><br>
-                          		<input type="email"  class="form-control" id="email" name="email" required  tabindex="4"><br>
-                              </div>
-                              <div class="form-group mt-3">
-                          		<label for="phone">Phone:</label><br>
-                          		<input type="text"  class="form-control" id="phone" name="phone" required  tabindex="5"><br>
-                              </div>
-                              <div class="form-group mt-3">
-                          		<label for="username">Username:</label><br>
-                          		<input type="text"  class="form-control" id="username" name="username" required  tabindex="6"><br>
-                              </div>
-                              <div class="form-group mt-3">
-                          		<label for="password">Password:</label><br>
-                          		<input type="password"  class="form-control" id="password" name="password" required  tabindex="7"><br>
-                              </div>
-                              <div class="form-group mt-3">
-                              <label for="address">Address:</label><br>
-                          		<input type="text"  class="form-control" id="address" name="address" required  tabindex="8"><br>
-                              </div>
+  <main id="main">
 
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
 
-                              <div class="form-group mt-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Portfolio Details</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Portfolio Details</li>
+          </ol>
+        </div>
 
+      </div>
+    </section><!-- End Breadcrumbs -->
 
-                              <div class="row">
-                              <div class="col">
-                              <label for="city">City:</label><br>
-                          		<input type="text"  class="form-control" id="city" name="city" required  tabindex="9"><br>
-                              </div>
-                              <div class="col">
-                              <label for="state">State:</label><br>
-                          		<input type="text"  class="form-control" id="state" name="state" required  tabindex="10"><br>
-                                </div>
-                                <div class="col">
-                                <label for="state">Zip:</label><br>
-                                <input type="text"  class="form-control" id="zipcode" name="zipcode" required  tabindex="11"><br><br>
-                                </div>
-                              </div>
-                              </div>
-                              <div class="form-group  mt-3">
-                                <label for="url_facebook">Referred By</label>
-                                <input type="text" class="form-control" id="referred_by" name="referred_by" <% if (request.getParameter("referred_by") !=null) { %>value="<%=request.getParameter("referred_by")%>" <% } %>  tabindex="12" >
-                              </div>
-                              <hr class="mt-3">
-                                <button type="submit" class="btn btn-primary btn-lg btn-block"  tabindex="13" onclick="submitForm(event)" >Sign-up</button>
-                              	</form>
-                        </div>
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
 
-                    </div>
-                </div>
-            </section>
+        <div class="row gy-4">
 
-
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <form action="hrn.jsp" method="POST" name="myForm" id="myForm" >
+                <input type="hidden" id="apiAction" name="apiAction" value="signup" />
+                  <div class="form-group mt-3">
                 <div class="row">
-
-                    <div class="col-12">
-                        <h5 class="text-white">
-                            <i class="bi-geo-alt-fill me-2"></i>
-                            All Region Inc
-                        </h5>
-                        <a href="mailto:info@allregioninc.com" class="custom-link mt-3 mb-5">
-                            info@allregioninc.com
-                        </a>
-                    </div>
-
-                    <div class="col-6">
-                      <p>
-                         Copyright © TFNLab 2023
-                        <br><br>Design: <a href="https://tfnlab.com" target="_parent">TFNLab</a>
-                    </p>
-
-                    </div>
-
-                    <div class="col-lg-3 col-5 ms-auto">
-                        <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
-                        </ul>
-                    </div>
-
+                  <div class="col">
+                <label for="firstName">First Name:</label><br>
+                <input type="text"  class="form-control mt-1" id="firstName" name="firstName"  required  tabindex="1"><br>
+                  </div>
+                  <div class="col">
+                <label for="middleInitial">Middle Initial:</label><br>
+                <input type="text"  class="form-control mt-1" id="middleInitial" name="middleInitial"  tabindex="2"><br>
+                  </div>
+                  <div class="col">
+                <label for="lastName">Last Name:</label><br>
+                <input type="text"  class="form-control mt-1" id="lastName" name="lastName" required  tabindex="3"><br>
+                  </div>
                 </div>
-            </section>
-        </footer>
+                  </div>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
+                <div class="form-group mt-3">
+                <label for="email">Email:</label><br>
+                <input type="email"  class="form-control" id="email" name="email" required  tabindex="4"><br>
+                </div>
+                <div class="form-group mt-3">
+                <label for="phone">Phone:</label><br>
+                <input type="text"  class="form-control" id="phone" name="phone" required  tabindex="5"><br>
+                </div>
+                <div class="form-group mt-3">
+                <label for="username">Username:</label><br>
+                <input type="text"  class="form-control" id="username" name="username" required  tabindex="6"><br>
+                </div>
+                <div class="form-group mt-3">
+                <label for="password">Password:</label><br>
+                <input type="password"  class="form-control" id="password" name="password" required  tabindex="7"><br>
+                </div>
+                <div class="form-group mt-3">
+                <label for="address">Address:</label><br>
+                <input type="text"  class="form-control" id="address" name="address" required  tabindex="8"><br>
+                </div>
 
-    </body>
+
+                <div class="form-group mt-3">
+
+
+                <div class="row">
+                <div class="col">
+                <label for="city">City:</label><br>
+                <input type="text"  class="form-control" id="city" name="city" required  tabindex="9"><br>
+                </div>
+                <div class="col">
+                <label for="state">State:</label><br>
+                <input type="text"  class="form-control" id="state" name="state" required  tabindex="10"><br>
+                  </div>
+                  <div class="col">
+                  <label for="state">Zip:</label><br>
+                  <input type="text"  class="form-control" id="zipcode" name="zipcode" required  tabindex="11"><br><br>
+                  </div>
+                </div>
+                </div>
+                <div class="form-group  mt-3">
+                  <label for="url_facebook">Referred By</label>
+                  <input type="text" class="form-control" id="referred_by" name="referred_by" <% if (request.getParameter("referred_by") !=null) { %>value="<%=request.getParameter("referred_by")%>" <% } %>  tabindex="12" >
+                </div>
+                <hr class="mt-3">
+                  <button type="submit" class="btn btn-primary btn-lg btn-block"  tabindex="13" onclick="submitForm(event)" >Sign-up</button>
+                  </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+            </div>
+            <div class="portfolio-description">
+              <h2>
+                Explore the diverse range of projects by LAPainterz.com, Los Angeles' premier painting company
+              </h2>
+              <p>
+                LAPainterz.com is a Los Angeles-based painting company that offers a wide range of home and commercial painting services. From interior and exterior painting to custom finishes and color consultations, our team has the experience and expertise to handle any project. Whether you're looking to give your home a fresh new look or need a professional touch for your commercial space, LAPainterz.com has the solutions you need. Explore our portfolio to see the range of projects we've completed and contact us today for a free quote.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Gp<span>.</span></h3>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Gp</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
