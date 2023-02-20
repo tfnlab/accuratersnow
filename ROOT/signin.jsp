@@ -95,7 +95,7 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider swiper" id="hrnapi" name="hrnapi">
               <form action="hrn.jsp" method="POST" class="mx-5" name="myForm" id="myForm" >
                 <input type="hidden" id="apiAction" name="apiAction" value="signin"/>
                 <div class="form-group mt-3">
