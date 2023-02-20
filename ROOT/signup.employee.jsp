@@ -172,7 +172,7 @@
               </div>
             <div class="portfolio-description">
               <p>
-                At Accu Raters, we believe in providing our customers with the best possible experience, which is why we have created a customer portal that gives you easy access to all the information you need. Our customer portal is designed to be user-friendly and intuitive, providing you with a range of features that will help you to manage your account and stay up-to-date with your orders.
+                The AccuRaters technician portal is an online platform designed for home inspectors and property assessors. It streamlines workflow by allowing technicians to access job assignments, schedules, and client details, as well as update inspection reports and communicate with clients. The mobile functionality of the portal enables technicians to work remotely, upload photos, and update reports on the go. This makes the platform a valuable tool for technicians in the field, allowing them to efficiently manage their inspections and assessments.
               </p>
             </div>
           </div>
