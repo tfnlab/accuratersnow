@@ -207,14 +207,14 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Customer Portal</h3>
             </div>
             <div class="portfolio-description">
               <h2>
-                Explore the diverse range of projects by LAPainterz.com, Los Angeles' premier painting company
+                Join Accu Raters today and unlock exclusive benefits for your energy efficiency needs!
               </h2>
               <p>
-                LAPainterz.com is a Los Angeles-based painting company that offers a wide range of home and commercial painting services. From interior and exterior painting to custom finishes and color consultations, our team has the experience and expertise to handle any project. Whether you're looking to give your home a fresh new look or need a professional touch for your commercial space, LAPainterz.com has the solutions you need. Explore our portfolio to see the range of projects we've completed and contact us today for a free quote.
+                At Accu Raters, we believe in providing our customers with the best possible experience, which is why we have created a customer portal that gives you easy access to all the information you need. Our customer portal is designed to be user-friendly and intuitive, providing you with a range of features that will help you to manage your account and stay up-to-date with your orders.
               </p>
             </div>
           </div>
