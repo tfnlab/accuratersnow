@@ -49,7 +49,7 @@
       }
     };
     // Set the request method and URL
-    var urlString = "hrn.jsp?apiAction=getOrders&";
+    var urlString = "hrn.jsp?apiAction=getOrders&orderId=<%=request.getParameter("orderId")%>";
     xhr.open("GET", urlString, true);
     xhr.send();
 
